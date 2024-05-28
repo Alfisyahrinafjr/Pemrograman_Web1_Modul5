@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Latihan JavaScript</h1>
+        <p>Silahkan masukkan angka</p>
+        <input id="demo" type="text">
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("demo").value;
+                if (x === "" || isNaN(x)) {
+                    alert("Mohon masukkan angka yang valid.");
+                } else {
+                    alert("Input yang dimasukkan adalah angka valid: " + x);
+                }
+            }
+        </script>
+        <button type="button" onclick="myFunction()">Cek Angka</button>
+    </body>
+</html>
